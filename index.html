@@ -3,7 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Portfólio pessoal e projetos de desenvolvimento web.">
 
     <title>Meu Portfólio</title>
 
@@ -13,29 +18,239 @@
 <body>
 
     <header>
-        <h1>Meu Portfólio</h1>
-        <p>Bem-vindo ao meu portfólio.</p>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Portfólio
+            </a>
+
+            <button class="menu-button" aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="quem-sou.html">Quem sou</a>
+                </li>
+
+                <li>
+                    <a href="projetos.html">Projetos</a>
+                </li>
+
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
     </header>
+
 
     <main>
 
-        <section>
-            <h2>Meus Projetos</h2>
+        <section class="hero">
 
-            <div id="projetos">
-                Carregando projetos...
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <h1>
+                        Olá, eu sou
+                        <span>Giovana</span>.
+                    </h1>
+
+                    <p>
+                        Este é o meu portfólio pessoal,
+                        onde apresento um pouco sobre mim,
+                        meus projetos e meus conhecimentos
+                        na área de tecnologia.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a
+                            href="projetos.html"
+                            class="btn btn-primary"
+                        >
+                            Ver meus projetos
+                        </a>
+
+                        <a
+                            href="contato.html"
+                            class="btn btn-secondary"
+                        >
+                            Entre em contato
+                        </a>
+
+                    </div>
+
+                </div>
+
             </div>
+
+        </section>
+
+
+     
+        <section>
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>Quem sou</h2>
+
+                    <p>
+                        Conheça um pouco mais sobre mim.
+                    </p>
+
+                </div>
+
+                <div class="about-content">
+
+                    <p>
+                        Sou estudante e tenho interesse
+                        por tecnologia, desenvolvimento web
+                        e criação de projetos digitais.
+                    </p>
+
+                    <p>
+                        Neste portfólio apresento alguns dos
+                        trabalhos que desenvolvi durante minha
+                        trajetória de aprendizagem.
+                    </p>
+
+                    <a
+                        href="quem-sou.html"
+                        class="btn btn-primary"
+                    >
+                        Saiba mais
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+      
+        <section>
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>Projetos em destaque</h2>
+
+                    <p>
+                        Alguns dos projetos cadastrados
+                        no meu portfólio.
+                    </p>
+
+                </div>
+
+                <div
+                    id="home-projetos"
+                    class="projects-grid"
+                >
+
+                    <p class="loading">
+                        Carregando projetos...
+                    </p>
+
+                </div>
+
+                <div
+                    class="text-center"
+                    style="margin-top: 35px;"
+                >
+
+                    <a
+                        href="projetos.html"
+                        class="btn btn-primary"
+                    >
+                        Ver todos os projetos
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+     
+        <section>
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>Vamos conversar?</h2>
+
+                    <p>
+                        Entre em contato comigo através
+                        do formulário.
+                    </p>
+
+                </div>
+
+                <div class="text-center">
+
+                    <a
+                        href="contato.html"
+                        class="btn btn-primary"
+                    >
+                        Entrar em contato
+                    </a>
+
+                </div>
+
+            </div>
+
         </section>
 
     </main>
 
-    <!-- Biblioteca do Supabase -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <footer>
 
-    <!-- Conexão com o Supabase -->
+        <div class="container">
+
+            <p>
+                ©
+                <span class="current-year"></span>
+                Meu Portfólio. Todos os direitos reservados.
+            </p>
+
+            <p>
+                Desenvolvido por
+                <a href="index.html">Giovana</a>.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+    </script>
+
     <script src="supabase.js"></script>
 
-    <!-- Código do site -->
     <script src="script.js"></script>
 
 </body>
