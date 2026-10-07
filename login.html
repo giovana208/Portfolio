@@ -1,1 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Área administrativa do portfólio.">
+
+    <title>Login | Meu Portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Portfólio
+            </a>
+
+            <button
+                class="menu-button"
+                aria-label="Abrir menu"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="quem-sou.html">
+                        Quem sou
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projetos.html">
+                        Projetos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contato.html">
+                        Contato
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="login-section">
+
+            <div class="login-box">
+
+                <h1>
+                    Área Administrativa
+                </h1>
+
+                <p
+                    style="
+                        text-align: center;
+                        color: #94a3b8;
+                        margin-bottom: 25px;
+                    "
+                >
+                    Entre para acessar o painel.
+                </p>
+
+
+                <form id="login-form">
+
+
+                    <div class="form-group">
+
+                        <label for="login-email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="login-email"
+                            name="email"
+                            placeholder="Digite seu e-mail"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="login-senha">
+                            Senha
+                        </label>
+
+                        <input
+                            type="password"
+                            id="login-senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Entrar
+                    </button>
+
+
+
+                    <div
+                        id="login-message"
+                        class="form-message"
+                    ></div>
+
+                </form>
+
+
+                <div
+                    style="
+                        text-align: center;
+                        margin-top: 25px;
+                    "
+                >
+
+                    <a
+                        href="index.html"
+                        style="color: #38bdf8;"
+                    >
+                        ← Voltar para o site
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                ©
+                <span class="current-year"></span>
+                Meu Portfólio. Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="supabase.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
