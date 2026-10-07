@@ -1,1 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Painel administrativo do portfólio.">
+
+    <title>Painel | Meu Portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Portfólio
+            </a>
+
+            <button
+                class="menu-button"
+                aria-label="Abrir menu"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Ver site
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projetos.html">
+                        Projetos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contato.html">
+                        Contato
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+   
+    <main>
+
+        <section class="dashboard">
+
+            <div class="container">
+
+             
+
+                <div class="dashboard-header">
+
+                    <div>
+
+                        <h1>
+                            Painel Administrativo
+                        </h1>
+
+                        <p style="color: #94a3b8;">
+                            Gerencie os projetos e mensagens
+                            do seu portfólio.
+                        </p>
+
+                    </div>
+
+                    <button
+                        id="logout-button"
+                        class="btn btn-secondary"
+                    >
+                        Sair
+                    </button>
+
+                </div>
+
+
+                <div class="admin-section">
+
+                    <h2>
+                        Adicionar projeto
+                    </h2>
+
+                    <form id="project-form">
+
+                   
+
+                        <div class="form-group">
+
+                            <label for="project-name">
+                                Nome do projeto *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="project-name"
+                                placeholder="Ex.: Site Restaurante"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="project-description">
+                                Descrição
+                            </label>
+
+                            <textarea
+                                id="project-description"
+                                placeholder="Descreva o projeto..."
+                            ></textarea>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="project-link">
+                                Link do projeto
+                            </label>
+
+                            <input
+                                type="url"
+                                id="project-link"
+                                placeholder="https://..."
+                            >
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="project-photo">
+                                Link da foto
+                            </label>
+
+                            <input
+                                type="url"
+                                id="project-photo"
+                                placeholder="https://..."
+                            >
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Cadastrar projeto
+                        </button>
+
+
+                        <div
+                            id="project-message"
+                            class="form-message"
+                        ></div>
+
+                    </form>
+
+                </div>
+
+
+
+                <div class="admin-section">
+
+                    <h2>
+                        Projetos cadastrados
+                    </h2>
+
+                    <div
+                        id="admin-projects"
+                        class="admin-list"
+                    >
+
+                        <p class="loading">
+                            Carregando projetos...
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="admin-section">
+
+                    <h2>
+                        Mensagens recebidas
+                    </h2>
+
+                    <div
+                        id="admin-leads"
+                        class="admin-list"
+                    >
+
+                        <p class="loading">
+                            Carregando mensagens...
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+ 
+    <footer>
+
+        <div class="container">
+
+            <p>
+                ©
+                <span class="current-year"></span>
+                Meu Portfólio. Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+    </script>
+
+    <script src="supabase.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
